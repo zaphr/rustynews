@@ -1,0 +1,29 @@
+<h1>Listing articles</h1>
+
+<table>
+  <tr>
+    <th>Nlaid</th>
+    <th>Date</th>
+    <th>Heading</th>
+    <th>Body</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= article.nlaid %></td>
+    <td><%= article.date %></td>
+    <td><%= article.heading %></td>
+    <td><%= article.body %></td>
+    <td><%= link_to 'Show', article %></td>
+    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Article', new_article_path %>

@@ -1,4 +1,6 @@
 Rustynews::Application.routes.draw do
+  resources :articles
+
   get "pages/about"
 
   get "pages/contact"
