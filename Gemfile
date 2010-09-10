@@ -35,7 +35,7 @@ end
 # To use debugger
 # gem 'ruby-debug'
 
-# Bundle the extra gems:
+#Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
