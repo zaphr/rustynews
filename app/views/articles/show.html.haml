@@ -1,25 +1,20 @@
-%p#notice
-  = notice
+#show_article
+  - @small = false
+  - if @small
+    #small_article_spacer
+  #article_image
+    = image_tag "articles/#{@article.nlaid}.jpg"
 
-%p
-  %b
-    Nlaid:
-  = @article.nlaid
+  #article_body
+    %h2
+      = "#{Time.now.year - @article.date.year} years ago"
+    %p
+      %b
+        = "The Argus - #{@article.date}"
+    %b
+      = @article.heading
+      = simple_format @article.body
 
-%p
-  %b
-    Date:
-  = @article.date
-
-%p
-  %b
-    Heading:
-  = @article.heading
-
-%p
-  %b
-    Body:
-  = simple_format @article.body
-
-= link_to 'Edit', edit_article_path(@article)
-= link_to 'Back', articles_path
+  #article_base
+    = link_to 'Edit', edit_article_path(@article)
+    = link_to 'Back', articles_path

@@ -8,8 +8,8 @@
 @import blueprint
 
 // Import the non-default scaffolding module.
-@import blueprint/scaffolding
-
+//@import blueprint/scaffolding
+@import blueprint/fancy_type
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
 // @include blueprint
@@ -17,32 +17,70 @@
 // But Compass recommends that you scope your blueprint styles
 // So that you can better control what pages use blueprint
 // when stylesheets are concatenated together.
-+blueprint-scaffolding("body.bp")
+//+blueprint-scaffolding("body.bp")
 
-body.bp
-//  +blueprint-typography(true)
+body
+  +blueprint-typography(true)
   +blueprint-utilities
   +blueprint-debug
   +blueprint-interaction
+//  +fancy-type
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
 
-form.bp
+form
   +blueprint-form
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.two-col
+  background-color: grey
   #container
     +container
-  #header, #footer
+    background-image: url('/images/bc1.jpg')
+    background-repeat: repeat-y
+  #footer
     +column($blueprint-grid-columns)
-  #sidebar
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 3)
-    +column($sidebar-columns)
+
+  #header
+    +column($blueprint-grid-columns, true)
+    #left_header
+      +column(($blueprint-grid-columns/2) + 5)
+    #middle_header
+      filter: alpha(opacity=70)
+      -moz-opacity: 0.7
+      -khtml-opacity: 0.7
+      +fancy-type
+      +column(($blueprint-grid-columns/2) - 7)
+      background-color: #393A38
+      +append-bottom(40px)
+      h1
+        color: white
+        padding: 10px
+      background-color: #393A38
+      background-color: black
+    #right_header
+      +column(2, true)
   #content
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3)
-    // true means it's the last column in the row
-    +column($content-columns, true)
+    min-height: 1200px
+    +column($blueprint-grid-columns, true)
+
+#show_article
+  +fancy-type
+  $article_width = $blueprint-grid-columns
+  +column($article_width, true)
+  +prepend-top(90px)
+  #small_article_spacer
+    +column($article_width, true)
+    +prepend-top(100px)
+  #article_body
+    +column(($article_width / 2) - 1, true)
+    +prepend-top(100px)
+    +prepend(1)
+  #article_image
+    +column(($article_width / 2) - 4)
+    +prepend(4)
+    +prepend-top(90px)
+    img
+      border: 5px solid white
+  #article_base
+    +column($article_width, true)

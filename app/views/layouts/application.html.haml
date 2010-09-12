@@ -10,12 +10,18 @@
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"
     = javascript_include_tag 'jquery.corner.js'
+    = javascript_include_tag 'application.js'
     = csrf_meta_tag
   %body.two-col
     #container
       #header
-        %h1
-          rusty news
+        #left_header
+          %h1
+        #middle_header
+          %h1
+            gruesome reports
+        #right_header
+          %h1
       #content.round
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_#{name}"
