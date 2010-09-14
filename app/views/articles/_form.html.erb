@@ -18,7 +18,7 @@
   <div class="field">
     <%= f.label :date %><br />
 
-    <%= f.date_select('date', {:start_year => 1850, :end_year => 1960})%>
+    <%= f.date_select('date', {:start_year => 1850, :end_year => 1960, :order => [:day, :month, :year]})%>
 
   </div>
   <div class="field">
@@ -33,6 +33,3 @@
     <%= f.submit %>
   </div>
 <% end %>
-
-<!--date_select("post", "written_on", :start_year => 1995, :use_month_numbers => true,-->
-                                    <!--:discard_day => true, :include_blank => true)-->

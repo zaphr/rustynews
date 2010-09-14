@@ -18,3 +18,5 @@
   #article_base
     = link_to 'Edit', edit_article_path(@article)
     = link_to 'Back', articles_path
+    = link_to 'See the original article held at NLA', "http://nla.gov.au/nla.news-article#{@article.nlaid}"
+    = link_to 'Random', article_path(random_article_id_excluding(@article.id))
