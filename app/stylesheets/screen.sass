@@ -54,7 +54,6 @@ body.two-col
       filter: alpha(opacity=70)
       -moz-opacity: 0.7
       -khtml-opacity: 0.7
-      +fancy-type
       +column(($blueprint-grid-columns/2) - 7)
       background-color: #393A38
       +append-bottom(40px)
@@ -70,17 +69,29 @@ body.two-col
     +column($blueprint-grid-columns, true)
 
 #show_article
-  +fancy-type
   $article_width = $blueprint-grid-columns
-  +column($article_width, true)
-  +prepend-top(90px)
   #small_article_spacer
     +column($article_width, true)
     +prepend-top(100px)
+  #article_page_heading
+    +column(($article_width / 2) , true)
+    +prepend(($article_width / 2) - 2)
+    +append(2)
   #article_body
-    +column(($article_width / 2) - 1, true)
-    +prepend-top(100px)
+    +column(($article_width / 2) - 4)
+    +prepend-top(90px)
     +prepend(1)
+    font-weight: bold
+    font-style: italic
+    text-align: justify
+    letter-spacing: 0.1em
+    color: black
+    padding: 30px
+    border: 1px solid white
+    background-image: url('/images/old_back.jpg')
+    background-repeat: repeat-y
+  #article_right
+    +column(5, true)
   #article_image
     +column(($article_width / 2) - 4)
     +prepend(4)

@@ -521,54 +521,16 @@ body.two-col #header #middle_header {
   background-color: #393a38;
   background-color: black;
 }
-/* line 83, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-body.two-col #header #middle_header p + p {
-  text-indent: 2em;
-  margin-top: -1.5em;
-  /* Don't want this in forms. */
-}
-/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-form body.two-col #header #middle_header p + p {
-  text-indent: 0;
-}
-/* line 85, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-body.two-col #header #middle_header p.incr,
-body.two-col #header #middle_header .incr p {
-  font-size: 0.833em;
-  line-height: 1.44em;
-  margin-bottom: 1.5em;
-}
-/* line 12, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-body.two-col #header #middle_header .caps {
-  font-variant: small-caps;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-  font-size: 1.2em;
-  line-height: 1%;
-  font-weight: bold;
-  padding: 0 2px;
-}
-/* line 13, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-body.two-col #header #middle_header .dquo {
-  margin-left: -0.5em;
-}
-/* line 14, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-body.two-col #header #middle_header .alt {
-  color: #666666;
-  font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
-  font-style: italic;
-  font-weight: normal;
-}
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #header #middle_header {
   overflow-x: hidden;
 }
-/* line 61, ../../app/stylesheets/screen.sass */
+/* line 60, ../../app/stylesheets/screen.sass */
 body.two-col #header #middle_header h1 {
   color: white;
   padding: 10px;
 }
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 65, ../../app/stylesheets/screen.sass */
 body.two-col #header #right_header {
   display: inline;
   float: left;
@@ -579,7 +541,7 @@ body.two-col #header #right_header {
 * html body.two-col #header #right_header {
   overflow-x: hidden;
 }
-/* line 68, ../../app/stylesheets/screen.sass */
+/* line 67, ../../app/stylesheets/screen.sass */
 body.two-col #content {
   min-height: 1200px;
   display: inline;
@@ -592,57 +554,7 @@ body.two-col #content {
   overflow-x: hidden;
 }
 
-/* line 72, ../../app/stylesheets/screen.sass */
-#show_article {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 1014px;
-  margin-top: 90px;
-}
-/* line 83, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-#show_article p + p {
-  text-indent: 2em;
-  margin-top: -1.5em;
-  /* Don't want this in forms. */
-}
-/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-form #show_article p + p {
-  text-indent: 0;
-}
-/* line 85, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-#show_article p.incr,
-#show_article .incr p {
-  font-size: 0.833em;
-  line-height: 1.44em;
-  margin-bottom: 1.5em;
-}
-/* line 12, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-#show_article .caps {
-  font-variant: small-caps;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-  font-size: 1.2em;
-  line-height: 1%;
-  font-weight: bold;
-  padding: 0 2px;
-}
-/* line 13, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-#show_article .dquo {
-  margin-left: -0.5em;
-}
-/* line 14, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
-#show_article .alt {
-  color: #666666;
-  font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
-  font-style: italic;
-  font-weight: normal;
-}
-/* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show_article {
-  overflow-x: hidden;
-}
-/* line 77, ../../app/stylesheets/screen.sass */
+/* line 73, ../../app/stylesheets/screen.sass */
 #show_article #small_article_spacer {
   display: inline;
   float: left;
@@ -654,20 +566,53 @@ form #show_article p + p {
 * html #show_article #small_article_spacer {
   overflow-x: hidden;
 }
+/* line 76, ../../app/stylesheets/screen.sass */
+#show_article #article_page_heading {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 502px;
+  padding-left: 426.667px;
+  padding-right: 85.333px;
+}
+/* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show_article #article_page_heading {
+  overflow-x: hidden;
+}
 /* line 80, ../../app/stylesheets/screen.sass */
 #show_article #article_body {
   display: inline;
   float: left;
-  margin-right: 0;
-  width: 459.333px;
-  margin-top: 100px;
+  margin-right: 10px;
+  width: 331.333px;
+  margin-top: 90px;
   padding-left: 42.667px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: justify;
+  letter-spacing: 0.1em;
+  color: black;
+  padding: 30px;
+  border: 1px solid white;
+  background-image: url("/images/old_back.jpg");
+  background-repeat: repeat-y;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show_article #article_body {
   overflow-x: hidden;
 }
-/* line 84, ../../app/stylesheets/screen.sass */
+/* line 93, ../../app/stylesheets/screen.sass */
+#show_article #article_right {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 203.333px;
+}
+/* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show_article #article_right {
+  overflow-x: hidden;
+}
+/* line 95, ../../app/stylesheets/screen.sass */
 #show_article #article_image {
   display: inline;
   float: left;
@@ -680,11 +625,11 @@ form #show_article p + p {
 * html #show_article #article_image {
   overflow-x: hidden;
 }
-/* line 88, ../../app/stylesheets/screen.sass */
+/* line 99, ../../app/stylesheets/screen.sass */
 #show_article #article_image img {
   border: 5px solid white;
 }
-/* line 90, ../../app/stylesheets/screen.sass */
+/* line 101, ../../app/stylesheets/screen.sass */
 #show_article #article_base {
   display: inline;
   float: left;

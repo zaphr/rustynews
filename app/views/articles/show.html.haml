@@ -2,19 +2,23 @@
   - @small = false
   - if @small
     #small_article_spacer
+  #article_page_heading
+    %h1
+      News is gruesome and a big long quote that will wrap somehow
   #article_image
     = image_tag "articles/#{@article.nlaid}.jpg"
 
   #article_body
-    %h2
-      = "#{Time.now.year - @article.date.year} years ago"
-    %p
-      %b
-        = "The Argus - #{@article.date}"
+    -#%h2
+    -#  = "#{Time.now.year - @article.date.year} years ago"
+    -#%p
+    -#  %b
+    -#    = "The Argus - #{@article.date}"
     %b
-      = @article.heading
+      -#= @article.heading
       = simple_format @article.body
-
+      -#= @article.body
+  #article_right
   #article_base
     = link_to 'Edit', edit_article_path(@article)
     = link_to 'Back', articles_path
