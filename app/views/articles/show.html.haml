@@ -4,7 +4,14 @@
     #small_article_spacer
   #article_page_heading
     %h1
-      News is gruesome and a big long quote that will wrap somehow
+      = "#{Time.now.year - @article.date.year} years ago"
+  #article_page_heading2
+    %h2
+      = "#{@article.date.strftime("%B %e, %Y")}"
+  #article_page_heading3
+    %h2
+      = link_to 'Next report', article_path(next_id_in_collection(:gruesome, @article.id))
+
   #article_image
     = image_tag "articles/#{@article.nlaid}.jpg"
 
@@ -16,6 +23,8 @@
     -#    = "The Argus - #{@article.date}"
     %b
       -#= @article.heading
+      = "The Argus\n"
+      = simple_format @article.heading
       = simple_format @article.body
       -#= @article.body
   #article_right

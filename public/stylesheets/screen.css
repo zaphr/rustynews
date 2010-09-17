@@ -455,8 +455,9 @@ form textarea {
 body.two-col {
   background-color: #202020;
   background-color: #333333;
+  background-color: white;
 }
-/* line 38, ../../app/stylesheets/screen.sass */
+/* line 39, ../../app/stylesheets/screen.sass */
 body.two-col #container {
   width: 1014px;
   margin: 0 auto;
@@ -465,7 +466,7 @@ body.two-col #container {
   background-image: url("/images/bc1_small.jpg");
   background-repeat: repeat-y;
 }
-/* line 42, ../../app/stylesheets/screen.sass */
+/* line 43, ../../app/stylesheets/screen.sass */
 body.two-col #background_container {
   width: 1014px;
   margin: 0 auto;
@@ -474,7 +475,7 @@ body.two-col #background_container {
   background-image: url("/images/bc1.jpg");
   background-repeat: no-repeat;
 }
-/* line 46, ../../app/stylesheets/screen.sass */
+/* line 47, ../../app/stylesheets/screen.sass */
 body.two-col #footer {
   display: inline;
   float: left;
@@ -485,37 +486,75 @@ body.two-col #footer {
 * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 49, ../../app/stylesheets/screen.sass */
+/* line 50, ../../app/stylesheets/screen.sass */
 body.two-col #header {
   display: inline;
   float: left;
   margin-right: 0;
   width: 1014px;
 }
+/* line 83, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
+body.two-col #header p + p {
+  text-indent: 2em;
+  margin-top: -1.5em;
+  /* Don't want this in forms. */
+}
+/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
+form body.two-col #header p + p {
+  text-indent: 0;
+}
+/* line 85, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
+body.two-col #header p.incr,
+body.two-col #header .incr p {
+  font-size: 0.833em;
+  line-height: 1.44em;
+  margin-bottom: 1.5em;
+}
+/* line 12, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
+body.two-col #header .caps {
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-size: 1.2em;
+  line-height: 1%;
+  font-weight: bold;
+  padding: 0 2px;
+}
+/* line 13, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
+body.two-col #header .dquo {
+  margin-left: -0.5em;
+}
+/* line 14, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_fancy-type.scss */
+body.two-col #header .alt {
+  color: #666666;
+  font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
+  font-style: italic;
+  font-weight: normal;
+}
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #header {
   overflow-x: hidden;
 }
-/* line 51, ../../app/stylesheets/screen.sass */
+/* line 53, ../../app/stylesheets/screen.sass */
 body.two-col #header #left_header {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 715.333px;
+  width: 800.667px;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #header #left_header {
   overflow-x: hidden;
 }
-/* line 53, ../../app/stylesheets/screen.sass */
+/* line 55, ../../app/stylesheets/screen.sass */
 body.two-col #header #middle_header {
   filter: alpha(opacity=70);
   -moz-opacity: 0.7;
-  -khtml-opacity: 0.7;
+  opacity: 0.7;
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 203.333px;
+  width: 160.667px;
   background-color: #393a38;
   margin-bottom: 40px;
   background-color: #393a38;
@@ -525,23 +564,23 @@ body.two-col #header #middle_header {
 * html body.two-col #header #middle_header {
   overflow-x: hidden;
 }
-/* line 60, ../../app/stylesheets/screen.sass */
+/* line 62, ../../app/stylesheets/screen.sass */
 body.two-col #header #middle_header h1 {
   color: white;
   padding: 10px;
 }
-/* line 65, ../../app/stylesheets/screen.sass */
+/* line 67, ../../app/stylesheets/screen.sass */
 body.two-col #header #right_header {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 75.333px;
+  width: 32.667px;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #header #right_header {
   overflow-x: hidden;
 }
-/* line 67, ../../app/stylesheets/screen.sass */
+/* line 69, ../../app/stylesheets/screen.sass */
 body.two-col #content {
   min-height: 1200px;
   display: inline;
@@ -554,7 +593,7 @@ body.two-col #content {
   overflow-x: hidden;
 }
 
-/* line 73, ../../app/stylesheets/screen.sass */
+/* line 75, ../../app/stylesheets/screen.sass */
 #show_article #small_article_spacer {
   display: inline;
   float: left;
@@ -566,42 +605,122 @@ body.two-col #content {
 * html #show_article #small_article_spacer {
   overflow-x: hidden;
 }
-/* line 76, ../../app/stylesheets/screen.sass */
+/* line 78, ../../app/stylesheets/screen.sass */
 #show_article #article_page_heading {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 502px;
-  padding-left: 426.667px;
-  padding-right: 85.333px;
+  width: 928.667px;
+  margin-top: 30px;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show_article #article_page_heading {
   overflow-x: hidden;
 }
-/* line 80, ../../app/stylesheets/screen.sass */
+/* line 81, ../../app/stylesheets/screen.sass */
+#show_article #article_page_heading h1, #show_article #article_page_heading h2, #show_article #article_page_heading h3 {
+  float: right;
+  color: grey;
+  font-style: italic;
+}
+/* line 85, ../../app/stylesheets/screen.sass */
+#show_article #article_page_heading2 {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 928.667px;
+}
+/* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show_article #article_page_heading2 {
+  overflow-x: hidden;
+}
+/* line 87, ../../app/stylesheets/screen.sass */
+#show_article #article_page_heading2 h1, #show_article #article_page_heading2 h2, #show_article #article_page_heading2 h3 {
+  float: right;
+  color: grey;
+  font-style: italic;
+}
+/* line 91, ../../app/stylesheets/screen.sass */
+#show_article #article_page_heading3 {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 928.667px;
+}
+/* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show_article #article_page_heading3 {
+  overflow-x: hidden;
+}
+/* line 93, ../../app/stylesheets/screen.sass */
+#show_article #article_page_heading3 h1, #show_article #article_page_heading3 h2, #show_article #article_page_heading3 h3 {
+  float: right;
+  color: grey;
+  font-style: italic;
+}
+/* line 97, ../../app/stylesheets/screen.sass */
+#show_article #article_page_heading3 img {
+  border: 1px solid black;
+}
+/* line 99, ../../app/stylesheets/screen.sass */
+#show_article #article_first_line {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 886px;
+  margin-top: 94px;
+}
+/* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show_article #article_first_line {
+  overflow-x: hidden;
+}
+/* line 102, ../../app/stylesheets/screen.sass */
+#show_article #article_first_line h2 {
+  float: right;
+  color: grey;
+  font-style: italic;
+}
+/* line 106, ../../app/stylesheets/screen.sass */
+#show_article #article_second_line {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 886px;
+}
+/* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show_article #article_second_line {
+  overflow-x: hidden;
+}
+/* line 108, ../../app/stylesheets/screen.sass */
+#show_article #article_second_line h2 {
+  float: right;
+  color: grey;
+  font-style: italic;
+}
+/* line 112, ../../app/stylesheets/screen.sass */
 #show_article #article_body {
+  color: #111111;
   display: inline;
   float: left;
   margin-right: 10px;
   width: 331.333px;
-  margin-top: 90px;
+  margin-top: 20px;
   padding-left: 42.667px;
   font-weight: bold;
-  font-style: italic;
   text-align: justify;
   letter-spacing: 0.1em;
   color: black;
   padding: 30px;
-  border: 1px solid white;
+  border: 3px solid white;
+  background: white;
   background-image: url("/images/old_back.jpg");
   background-repeat: repeat-y;
+  font-style: oblique;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show_article #article_body {
   overflow-x: hidden;
 }
-/* line 93, ../../app/stylesheets/screen.sass */
+/* line 127, ../../app/stylesheets/screen.sass */
 #show_article #article_right {
   display: inline;
   float: left;
@@ -612,24 +731,24 @@ body.two-col #content {
 * html #show_article #article_right {
   overflow-x: hidden;
 }
-/* line 95, ../../app/stylesheets/screen.sass */
+/* line 129, ../../app/stylesheets/screen.sass */
 #show_article #article_image {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 331.333px;
   padding-left: 170.667px;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show_article #article_image {
   overflow-x: hidden;
 }
-/* line 99, ../../app/stylesheets/screen.sass */
+/* line 133, ../../app/stylesheets/screen.sass */
 #show_article #article_image img {
-  border: 5px solid white;
+  border: 3px solid white;
 }
-/* line 101, ../../app/stylesheets/screen.sass */
+/* line 135, ../../app/stylesheets/screen.sass */
 #show_article #article_base {
   display: inline;
   float: left;

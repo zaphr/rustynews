@@ -35,6 +35,7 @@ form
 body.two-col
   background-color: #202020
   background-color: #333333
+  background-color: white
   #container
     +container
     background-image: url('/images/bc1_small.jpg')
@@ -47,14 +48,15 @@ body.two-col
     +column($blueprint-grid-columns)
 
   #header
+    +fancy-type
     +column($blueprint-grid-columns, true)
     #left_header
-      +column(($blueprint-grid-columns/2) + 5)
+      +column(($blueprint-grid-columns/2) + 7)
     #middle_header
       filter: alpha(opacity=70)
       -moz-opacity: 0.7
-      -khtml-opacity: 0.7
-      +column(($blueprint-grid-columns/2) - 7)
+      opacity: 0.7
+      +column(($blueprint-grid-columns/2) - 8)
       background-color: #393A38
       +append-bottom(40px)
       h1
@@ -63,7 +65,7 @@ body.two-col
       background-color: #393A38
       background-color: black
     #right_header
-      +column(2, true)
+      +column(1, true)
   #content
     min-height: 1200px
     +column($blueprint-grid-columns, true)
@@ -74,29 +76,61 @@ body.two-col
     +column($article_width, true)
     +prepend-top(100px)
   #article_page_heading
-    +column(($article_width / 2) , true)
-    +prepend(($article_width / 2) - 2)
-    +append(2)
+    +column($article_width - 2, true)
+    +prepend-top(30px)
+    h1, h2, h3
+      float: right
+      color: grey
+      font-style: italic
+  #article_page_heading2
+    +column($article_width - 2, true)
+    h1, h2, h3
+      float: right
+      color: grey
+      font-style: italic
+  #article_page_heading3
+    +column($article_width - 2, true)
+    h1, h2, h3
+      float: right
+      color: grey
+      font-style: italic
+    img
+      border: 1px solid black
+  #article_first_line
+    +column($article_width - 3, true)
+    +prepend-top(94px)
+    h2
+      float: right
+      color: grey
+      font-style: italic
+  #article_second_line
+    +column($article_width - 3, true)
+    h2
+      float: right
+      color: grey
+      font-style: italic
   #article_body
+    +loud
     +column(($article_width / 2) - 4)
-    +prepend-top(90px)
+    +prepend-top(20px)
     +prepend(1)
     font-weight: bold
-    font-style: italic
     text-align: justify
     letter-spacing: 0.1em
     color: black
     padding: 30px
-    border: 1px solid white
+    border: 3px solid white
+    background: white
     background-image: url('/images/old_back.jpg')
     background-repeat: repeat-y
+    font-style: oblique
   #article_right
     +column(5, true)
   #article_image
     +column(($article_width / 2) - 4)
     +prepend(4)
-    +prepend-top(90px)
+    +prepend-top(20px)
     img
-      border: 5px solid white
+      border: 3px solid white
   #article_base
     +column($article_width, true)
