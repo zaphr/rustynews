@@ -21,6 +21,11 @@ class ArticlesController < ApplicationController
     end
   end
 
+def first
+  @article = Article.home_article
+  render :show
+end
+
   # GET /articles/new
   # GET /articles/new.xml
   def new

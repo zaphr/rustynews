@@ -1,9 +1,10 @@
 Rustynews::Application.routes.draw do
-  resources :articles
+  resources :articles, :only => :show
 
-  get "pages/about"
-
-  get "pages/contact"
+  root :to => 'articles#first'
+#  get "pages/about"
+#
+#  get "pages/contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

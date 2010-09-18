@@ -15,15 +15,7 @@
   %body.two-col
     #container
       #background_container
-        #header
-          #left_header
-            %h1
-          #middle_header
-            %h1
-              grim reports
-          #right_header
-            %h1
-        #content.round
+        #content
           - flash.each do |name, msg|
             = content_tag :div, msg, :id => "flash_#{name}"
           = yield

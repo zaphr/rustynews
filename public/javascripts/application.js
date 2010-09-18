@@ -43,8 +43,8 @@ $("#article_image img").hover(function() {
 $(document).ready(function(){
 
   if (!$.browser.msie) {
-    $(".round").corner("round  10px");
-    $("#header").corner("round br  10px");
-    $("#top_pagination").corner("round tl tr 10px");
+//    $(".round").corner("round  10px");
+//    $("#header").corner("round br  10px");
+//    $("#top_pagination").corner("round tl tr 10px");
     }
 });

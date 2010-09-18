@@ -1,35 +1,39 @@
+#header
+  #header_content
+    #article_page_heading
+      %h1
+        = "#{Time.now.year - @article.date.year} years ago"
+    #article_page_heading2
+      %h2
+        = "#{@article.date.strftime("%B %e, %Y")}"
+    #article_page_heading3
+      %h2
+        = link_to 'Next report', article_path(next_id_in_collection(:gruesome, @article.id))
+  #header_title
+    #left_header
+      %h1
+    #middle_header
+      %h1
+        grim reports
+
 #show_article
-  - @small = false
-  - if @small
-    #small_article_spacer
-  #article_page_heading
-    %h1
-      = "#{Time.now.year - @article.date.year} years ago"
-  #article_page_heading2
-    %h2
-      = "#{@article.date.strftime("%B %e, %Y")}"
-  #article_page_heading3
-    %h2
-      = link_to 'Next report', article_path(next_id_in_collection(:gruesome, @article.id))
-
-  #article_image
-    = image_tag "articles/#{@article.nlaid}.jpg"
-
-  #article_body
-    -#%h2
-    -#  = "#{Time.now.year - @article.date.year} years ago"
-    -#%p
-    -#  %b
-    -#    = "The Argus - #{@article.date}"
-    %b
-      -#= @article.heading
-      = "The Argus\n"
-      = simple_format @article.heading
-      = simple_format @article.body
-      -#= @article.body
-  #article_right
-  #article_base
-    = link_to 'Edit', edit_article_path(@article)
-    = link_to 'Back', articles_path
-    = link_to 'See the original article held at NLA', "http://nla.gov.au/nla.news-article#{@article.nlaid}"
-    = link_to 'Random', article_path(random_article_id_excluding(@article.id))
+  #article_spacer
+  #article_background
+    #article_wrapper
+      #article_image
+        = image_tag "articles/#{@article.nlaid}.jpg"
+        %h3
+          = "The Argus"
+      #article_body
+        %b
+          = simple_format @article.heading
+          = simple_format @article.body
+    #article_base
+      %h2
+        = link_to 'Next report', article_path(next_id_in_collection(:gruesome, @article.id))
+      %h3
+        = link_to 'View the original at the National Library of Australia', "http://nla.gov.au/nla.news-article#{@article.nlaid}"
+      -#= link_to 'Edit', edit_article_path(@article)
+      -#= link_to 'Back', articles_path
+      -#
+      -#= link_to 'Random', article_path(random_article_id_excluding(@article.id))
