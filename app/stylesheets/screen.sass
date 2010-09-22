@@ -33,14 +33,7 @@ form
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.two-col
-  background-color: #202020
-  background-color: #7C8200
-  background-color: #333333
   background-color: white
-  background-image: url('/images/news9b.jpg')
-  background-image: url('/images/news24.jpg')
-  background-image: url('/images/news10b.jpg')
-  background-repeat: repeat-x
   #container
     +container
   #footer
@@ -62,7 +55,6 @@ body.two-col
       h1
         color: white
         padding: 10px
-      background-color: #393A38
       background-color: black
   #header_content
     $header_column = ($blueprint-grid-columns / 2) - 3
@@ -93,6 +85,9 @@ body.two-col
   +column($blueprint-grid-columns, true)
   min-height: 1150px
   background: white
+  background-image: url('/images/ink1.jpg')
+  background-repeat: no-repeat
+  background-position: top
 #show_article
   $article_width = $blueprint-grid-columns - 2
   #article_spacer

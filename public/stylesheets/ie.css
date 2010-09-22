@@ -87,3 +87,8 @@ body button {
   position: relative;
   top: 0.25em;
 }
+
+/* line 18, ../../app/stylesheets/ie.scss */
+body.two-col {
+  background-color: black;
+}
