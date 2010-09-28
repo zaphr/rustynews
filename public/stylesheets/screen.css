@@ -454,15 +454,16 @@ form textarea {
 /* line 35, ../../app/stylesheets/screen.sass */
 body.two-col {
   background-color: white;
+  background-repeat: repeat-x;
 }
-/* line 37, ../../app/stylesheets/screen.sass */
+/* line 38, ../../app/stylesheets/screen.sass */
 body.two-col #container {
   width: 1014px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 39, ../../app/stylesheets/screen.sass */
+/* line 40, ../../app/stylesheets/screen.sass */
 body.two-col #footer {
   display: inline;
   float: left;
@@ -474,7 +475,7 @@ body.two-col #footer {
   overflow-x: hidden;
 }
 
-/* line 41, ../../app/stylesheets/screen.sass */
+/* line 42, ../../app/stylesheets/screen.sass */
 #header {
   display: inline;
   float: left;
@@ -485,7 +486,7 @@ body.two-col #footer {
 * html #header {
   overflow-x: hidden;
 }
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 44, ../../app/stylesheets/screen.sass */
 #header #header_title {
   display: inline;
   float: left;
@@ -534,7 +535,7 @@ form #header #header_title p + p {
   font-style: italic;
   font-weight: normal;
 }
-/* line 46, ../../app/stylesheets/screen.sass */
+/* line 47, ../../app/stylesheets/screen.sass */
 #header #header_title #left_header {
   display: inline;
   float: left;
@@ -545,7 +546,7 @@ form #header #header_title p + p {
 * html #header #header_title #left_header {
   overflow-x: hidden;
 }
-/* line 48, ../../app/stylesheets/screen.sass */
+/* line 49, ../../app/stylesheets/screen.sass */
 #header #header_title #middle_header {
   filter: alpha(opacity=70);
   -moz-opacity: 0.7;
@@ -562,12 +563,12 @@ form #header #header_title p + p {
 * html #header #header_title #middle_header {
   overflow-x: hidden;
 }
-/* line 55, ../../app/stylesheets/screen.sass */
+/* line 56, ../../app/stylesheets/screen.sass */
 #header #header_title #middle_header h1 {
   color: white;
   padding: 10px;
 }
-/* line 59, ../../app/stylesheets/screen.sass */
+/* line 60, ../../app/stylesheets/screen.sass */
 #header #header_content {
   display: inline;
   float: left;
@@ -579,7 +580,7 @@ form #header #header_title p + p {
 * html #header #header_content {
   overflow-x: hidden;
 }
-/* line 63, ../../app/stylesheets/screen.sass */
+/* line 64, ../../app/stylesheets/screen.sass */
 #header #header_content #article_page_heading {
   display: inline;
   float: left;
@@ -591,13 +592,13 @@ form #header #header_title p + p {
 * html #header #header_content #article_page_heading {
   overflow-x: hidden;
 }
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 67, ../../app/stylesheets/screen.sass */
 #header #header_content #article_page_heading h1, #header #header_content #article_page_heading h2, #header #header_content #article_page_heading h3 {
   float: left;
   color: grey;
   font-style: italic;
 }
-/* line 70, ../../app/stylesheets/screen.sass */
+/* line 71, ../../app/stylesheets/screen.sass */
 #header #header_content #article_page_heading2 {
   display: inline;
   float: left;
@@ -608,13 +609,13 @@ form #header #header_title p + p {
 * html #header #header_content #article_page_heading2 {
   overflow-x: hidden;
 }
-/* line 72, ../../app/stylesheets/screen.sass */
+/* line 73, ../../app/stylesheets/screen.sass */
 #header #header_content #article_page_heading2 h1, #header #header_content #article_page_heading2 h2, #header #header_content #article_page_heading2 h3 {
   float: left;
   color: grey;
   font-style: italic;
 }
-/* line 76, ../../app/stylesheets/screen.sass */
+/* line 77, ../../app/stylesheets/screen.sass */
 #header #header_content #article_page_heading3 {
   display: inline;
   float: left;
@@ -625,14 +626,14 @@ form #header #header_title p + p {
 * html #header #header_content #article_page_heading3 {
   overflow-x: hidden;
 }
-/* line 78, ../../app/stylesheets/screen.sass */
+/* line 79, ../../app/stylesheets/screen.sass */
 #header #header_content #article_page_heading3 h1, #header #header_content #article_page_heading3 h2, #header #header_content #article_page_heading3 h3 {
   float: left;
   color: grey;
   font-style: italic;
 }
 
-/* line 83, ../../app/stylesheets/screen.sass */
+/* line 84, ../../app/stylesheets/screen.sass */
 #content {
   margin-top: 0px;
   display: inline;
@@ -650,7 +651,7 @@ form #header #header_title p + p {
   overflow-x: hidden;
 }
 
-/* line 93, ../../app/stylesheets/screen.sass */
+/* line 94, ../../app/stylesheets/screen.sass */
 #show_article #article_spacer {
   display: inline;
   float: left;
@@ -662,13 +663,13 @@ form #header #header_title p + p {
 * html #show_article #article_spacer {
   overflow-x: hidden;
 }
-/* line 96, ../../app/stylesheets/screen.sass */
+/* line 97, ../../app/stylesheets/screen.sass */
 #show_article #article_wrapper {
   display: inline;
   float: left;
   margin-right: 0;
   width: 843.333px;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 40px;
   background-image: url("/images/old_back2.jpg");
   background-repeat: repeat-y;
@@ -679,7 +680,7 @@ form #header #header_title p + p {
 * html #show_article #article_wrapper {
   overflow-x: hidden;
 }
-/* line 104, ../../app/stylesheets/screen.sass */
+/* line 105, ../../app/stylesheets/screen.sass */
 #show_article #article_wrapper #article_body {
   color: #111111;
   display: inline;
@@ -700,7 +701,7 @@ form #header #header_title p + p {
 * html #show_article #article_wrapper #article_body {
   overflow-x: hidden;
 }
-/* line 116, ../../app/stylesheets/screen.sass */
+/* line 117, ../../app/stylesheets/screen.sass */
 #show_article #article_wrapper #article_right {
   display: inline;
   float: left;
@@ -711,7 +712,7 @@ form #header #header_title p + p {
 * html #show_article #article_wrapper #article_right {
   overflow-x: hidden;
 }
-/* line 119, ../../app/stylesheets/screen.sass */
+/* line 120, ../../app/stylesheets/screen.sass */
 #show_article #article_wrapper #article_image {
   display: inline;
   float: left;
@@ -725,18 +726,18 @@ form #header #header_title p + p {
 * html #show_article #article_wrapper #article_image {
   overflow-x: hidden;
 }
-/* line 124, ../../app/stylesheets/screen.sass */
+/* line 125, ../../app/stylesheets/screen.sass */
 #show_article #article_wrapper #article_image img {
   border: 5px solid white;
 }
-/* line 126, ../../app/stylesheets/screen.sass */
+/* line 127, ../../app/stylesheets/screen.sass */
 #show_article #article_wrapper #article_image h3 {
   color: grey;
   float: right;
   font-style: italic;
   margin-top: 30px;
 }
-/* line 132, ../../app/stylesheets/screen.sass */
+/* line 133, ../../app/stylesheets/screen.sass */
 #show_article #article_base {
   display: inline;
   float: left;

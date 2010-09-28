@@ -32,7 +32,7 @@ class Article < ActiveRecord::Base
 
   def self.home_article
 #    Rails.cache.delete('Article.home_article')
-    Rails.cache.fetch('Article.home_article') {find_by_nlaid('10338586')}
+    Rails.cache.fetch('Article.home_article') {find_by_nlaid('9555477')}
   end
 
   private

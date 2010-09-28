@@ -34,6 +34,7 @@ form
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.two-col
   background-color: white
+  background-repeat: repeat-x
   #container
     +container
   #footer
@@ -95,7 +96,7 @@ body.two-col
     +append-bottom(40px)
   #article_wrapper
     +column($article_width - 2, true)
-    +prepend-top(30px)
+    +prepend-top(50px)
     +append-bottom(40px)
     background-image: url('/images/old_back2.jpg')
     background-repeat: repeat-y
