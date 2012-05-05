@@ -12,7 +12,6 @@ gem 'haml'
 gem "compass", ">= 0.10.5"
 
 group :development do
-  gem 'annotate-models'
   gem 'faker', '0.3.1'
 end
 
