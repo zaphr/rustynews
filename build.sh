@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## TODO: check that rvm is installed
+## TODO: check that rvm and ruby 1.9.2+ is installed
 
 gem install bundler -v '1.0.22'
 bundle _1.0.22_ install
